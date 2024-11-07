@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de mots de passe</title>
+
+    <meta name="description" content="Description du site">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="title">Générateur de Mdp</h1>
+
+    <div class = "formulaire">
+        <form>
+            <div class="form-group">
+                <input type="number" id="nbr_mdp" min="1" required>
+                <label for="nbr_mdp">Nombre de Mdp</label>
+            </div>
+
+            <div class="form-group">
+                <input type="number" id="nbr_elem" min="8" required>
+                <label for="nbr_elem">Taille du Mdp</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="Min">
+                <label for="Min">Minuscules</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="Maj">
+                <label for="Maj">Majuscultes</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="Chiffre">
+                <label for="Chiffre">Chiffres</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="checkbox" id="Characteres_spe">
+                <label for="Characteres_spe">Characteres speciaux</label>
+            </div>
+
+            <button>Generer</button>
+        </form>
+    </div>
+    
+    <div id = "erreur">
+
+    </div>
+
+    <table id="tableau_mdp">
+    </table>
+    
+    <script src="index.js"></script>
+    <script src="data.js"></script>
+    <script src="force_mdp.js"></script>
+</body>
+</html>
